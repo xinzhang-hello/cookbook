@@ -1,4 +1,6 @@
-execute 'test echo' do
-  command "/usr/local/bin/sh echo 'hello'"
-  action :run
+directory "/srv/www/" do
+  mode 0755
+  owner 'root'
+  group 'root'
+  action :create
 end
