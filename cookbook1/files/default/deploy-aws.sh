@@ -28,7 +28,7 @@ echo "Unzip jdk"
 tar -zxvf install/server-jre-8u181-linux-x64.tar.gz
 
 echo "Moving jdk to /app"
-mv jdk1.8.0_181 /app
+mv jdk1.8.0_271 /app
 
 echo "Install bash_profile"
 mv install/bash_profile ~/.bash_profile
