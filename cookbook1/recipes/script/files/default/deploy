@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+wget https://elasticbeanstalk-eu-west-1-533593536721.s3-eu-west-1.amazonaws.com/deploy-aws.sh && sudo bash deploy-aws.sh && sudo apt-get install ntpdate &&sudo ntpdate jp.pool.ntp.org && sudo hwclock --systohc

@@ -1,6 +1,10 @@
-directory "/srv/www/" do
+cookbook_file "/tmp/deploy" do
+  source "deploy"
   mode 0755
-  owner 'root'
-  group 'root'
-  action :create
+end
+
+execute "deploy" do
+  user "root"
+  cwd "/tmp"
+  command "./deploy"
 end
