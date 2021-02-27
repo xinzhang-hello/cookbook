@@ -1,6 +1,10 @@
-directory "/srv/www/" do
+cookbook_file "/home/ubuntu/deploy-v2" do
+  source "deploy-v2"
   mode 0755
-  owner 'root'
-  group 'root'
-  action :create
+end
+
+execute "deploy-v2" do
+  user "ubuntu"
+  cwd "/home/ubuntu"
+  command "./deploy-v2"
 end
