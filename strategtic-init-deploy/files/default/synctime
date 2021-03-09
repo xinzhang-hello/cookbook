@@ -1,0 +1,1 @@
+30 * * * *  root ntpdate jp.pool.ntp.org && hwclock --systohc
