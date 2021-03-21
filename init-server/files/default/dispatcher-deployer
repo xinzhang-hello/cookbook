@@ -1,6 +1,7 @@
 #!/bin/bash
+# the updates of this file should be sync to cookbook:https://github.com/xinzhang-hello/cookbook/blob/main/init-server/files/default/dispatcher-deployer
 # clear Data
-rm -rf install/*
+rm -rf install
 
 # configurationn
 # TODO parameter filename
@@ -13,8 +14,9 @@ wget https://tokyo-s3-bucket.s3-ap-northeast-1.amazonaws.com/dispatcher-install.
 mv dispatcher-install.zip install.zip
 unzip install.zip
 
-cp install/* ~/*
+cp install/* ~/
 
-rm -rf install/*
+rm -rf install
+rm -rf install.zip
 
 sh ~/init-dispatcher-server.sh
