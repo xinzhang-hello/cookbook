@@ -4,11 +4,11 @@ rm -rf install/*
 
 # configurationn
 # TODO parameter filename
-wget https://elasticbeanstalk-eu-west-1-533593536721.s3-eu-west-1.amazonaws.com/configuration-dependencies.sh
+wget https://tokyo-s3-bucket.s3-ap-northeast-1.amazonaws.com/configuration-dependencies.sh
 sh configuration-dependencies.sh
 
 # TODO parameter fileName
-wget https://elasticbeanstalk-eu-west-1-533593536721.s3-eu-west-1.amazonaws.com/dispatcher-install.zip
+wget https://tokyo-s3-bucket.s3-ap-northeast-1.amazonaws.com/dispatcher-install.zip
 
 mv dispatcher-install.zip install.zip
 unzip install.zip
