@@ -14,9 +14,9 @@ wget https://tokyo-s3-bucket.s3-ap-northeast-1.amazonaws.com/dispatcher-install.
 mv dispatcher-install.zip install.zip
 unzip install.zip
 
-cp install/* ~/
+cp install/* /home/ubuntu/
 
 rm -rf install
 rm -rf install.zip
 
-sh ~/init-dispatcher-server.sh
+sh /home/ubuntu/init-dispatcher-server.sh
