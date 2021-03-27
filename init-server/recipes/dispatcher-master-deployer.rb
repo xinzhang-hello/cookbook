@@ -1,5 +1,11 @@
+cookbook_file "/etc/profile.d/masterNode" do
+  source "masterNode"
+  mode 0440
+  action :create
+end
+
 cookbook_file "/home/ubuntu/deploy" do
-  source "strategic-deployer"
+  source "dispatcher-deployer"
   mode 0755
 end
 
@@ -8,5 +14,6 @@ execute "deploy" do
   cwd "/home/ubuntu"
   command "./deploy"
 end
+
 
 

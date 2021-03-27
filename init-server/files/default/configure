@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# configuration
+wget https://tokyo-s3-bucket.s3-ap-northeast-1.amazonaws.com/configuration-dependencies.sh
+sh configuration-dependencies.sh

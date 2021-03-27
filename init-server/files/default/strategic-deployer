@@ -3,10 +3,6 @@
 # clear Data
 rm -rf install
 
-# configurationn
-wget https://tokyo-s3-bucket.s3-ap-northeast-1.amazonaws.com/configuration-dependencies.sh
-sh configuration-dependencies.sh
-
 wget https://tokyo-s3-bucket.s3-ap-northeast-1.amazonaws.com/strategic-install.zip
 
 mv strategic-install.zip install.zip
