@@ -4,4 +4,5 @@ rm -rf configuration-dependencies.sh
 
 # configuration
 wget https://tokyo-s3-bucket.s3-ap-northeast-1.amazonaws.com/configuration-dependencies.sh
-sh configuration-dependencies.sh
+chmod +x configuration-dependencies.sh
+./configuration-dependencies.sh
